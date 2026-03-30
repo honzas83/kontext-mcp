@@ -75,9 +75,6 @@ Add the following to your `.codex/config.toml`:
 command = ".venv/bin/python"
 args = ["kontext_mcp.py"]
 enabled = true
-
-[mcp_servers.kontext.tools.list_corpora]
-approval_mode = "approve"
 ```
 
 ## Tools Overview
