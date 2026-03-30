@@ -1,0 +1,13 @@
+[mcp_servers.kontext]
+command = ".venv/bin/python"
+args = ["kontext_mcp.py"]
+enabled = true
+
+[mcp_servers.kontext.tools.list_corpora]
+approval_mode = "approve"
+
+[mcp_servers.kontext.tools.get_corpus_details]
+approval_mode = "approve"
+
+[mcp_servers.kontext.tools.search_concordance]
+approval_mode = "approve"
