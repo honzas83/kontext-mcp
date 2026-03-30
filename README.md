@@ -51,6 +51,35 @@ To use this server with Claude Desktop, add the following to your `claude_deskto
 }
 ```
 
+### Gemini CLI
+Add the following to your `~/.gemini/settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "kontext": {
+      "command": ".venv/bin/python",
+      "args": [
+        "kontext_mcp.py"
+      ]
+    }
+  }
+}
+```
+
+### Codex CLI
+Add the following to your `.codex/config.toml`:
+
+```toml
+[mcp_servers.kontext]
+command = ".venv/bin/python"
+args = ["kontext_mcp.py"]
+enabled = true
+
+[mcp_servers.kontext.tools.list_corpora]
+approval_mode = "approve"
+```
+
 ## Tools Overview
 
 - `list_corpora`: Find corpora IDs (e.g., `bnc`, `czeng_20`).
