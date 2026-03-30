@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "kontext": {
+      "command": ".venv/bin/python",
+      "args": [
+        "kontext_mcp.py"
+      ]
+    }
+  }
+}
